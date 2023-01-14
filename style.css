@@ -323,7 +323,7 @@ body {
 /* project starts */
 
 #project .row .item{
-  border-radius: 5px;
+  border-radius: 6px;
 
 }
 #project .row .item:hover{
