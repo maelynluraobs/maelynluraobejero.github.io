@@ -1,5 +1,22 @@
 /* PASAR CUTIE */
 
+/* gallery */
+var video = document.querySelectorAll('video')
+video.forEach(play => play.addEventListener('click', () => {
+  play.classList.toggle('active');
+
+  if(play.paused){
+      play.play();
+  }
+  else{
+    play.pause();
+    play.currentTime = 0;
+  }
+} 
+));
+
+
+
 
 /* CONTACT */
 document.querySelector('#contact-form').addEventListener('submit', (e) => {
@@ -10,9 +27,23 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
   });
 
   /* carousel */
-  $('input').on('change', function() {
-    $('projects').toggleClass('blue');
-  });
+  $('.owl-carousel').owlCarousel({
+    items:1,
+    merge:true,
+    loop:true,
+    margin:10,
+    video:true,
+    lazyLoad:true,
+    center:true,
+    responsive:{
+        480:{
+            items:2
+        },
+        600:{
+            items:4
+        }
+    }
+})
   
 
 

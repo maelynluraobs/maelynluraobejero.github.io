@@ -222,6 +222,40 @@ body {
 
   /* about end  */ 
 
+  /* interests starts */
+  .interests .icon-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    transition: ease-in-out 0.3s;
+    border-radius: 6px;
+  }
+  
+  .interests .icon-box i {
+    font-size: 32px;
+    padding-right: 10px;
+    line-height: 1;
+    border-radius: 6px;
+  }
+  
+  .interests .icon-box h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .interests .icon-box:hover {
+    color: white;
+    margin: 0;
+    box-shadow: 8px 8px 8px 0px lightgray;
+    background-color: #7c8351;
+  }
+  /* interests ends */ 
+
   /* skills start */ 
 .skills{
   position: relative;
@@ -287,15 +321,46 @@ body {
 
 
 /* project starts */
+
+#project .row .item{
+  border-radius: 5px;
+
+}
+#project .row .item:hover{
+  border-radius: 5px;
+  border: solid 1px #747c5c;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  box-shadow: 10px 10px 10px 0px lightgray;
+
+}
+#projects .nav a {
+  border-radius: 7px;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+#projects .nav li a:hover {
+  background: #0c3434;
+  border-radius: 7px;
+}
+
+#projects .nav a.active {
+  background: #0c3434;
+  border-radius: 7px;
+}
+
+
 /* projects end */ 
 /* blog starts */ 
 
 
-#blog p{
+#blog  p{
   color: #b4b783;
 }
 
-#blog{
+#blog {
   text-align: center;
 }
 #blog .container{
@@ -306,7 +371,7 @@ body {
   text-decoration: none;
   outline: none;
 }
-#blog .card-flyer {
+#blog  .card-flyer {
   border-radius: 5px;
 }
 #blog .card-flyer .image-box{
@@ -314,7 +379,7 @@ body {
   overflow: hidden;
   border-radius: 5px;
 }
-#blog .card-flyer .image-box img{
+#blog  .card-flyer .image-box img{
   -webkit-transition:all .9s ease; 
   -moz-transition:all .9s ease; 
   -o-transition:all .9s ease;
@@ -330,7 +395,7 @@ body {
   -o-transform:scale(1.15);
   transform:scale(1.15);
 }
-#blog .card-flyer .text-box{
+#blog  .card-flyer .text-box{
   text-align: center;
   justify-content: center;
 }
@@ -347,7 +412,7 @@ body {
   transition: all 0.2s ease-in;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
 }
-#blog .card-flyer:hover{
+#blog  .card-flyer:hover{
   background: #fff;
   box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
   border: solid 1px #647334;
